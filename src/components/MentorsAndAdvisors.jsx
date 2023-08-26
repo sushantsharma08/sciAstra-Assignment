@@ -1,4 +1,4 @@
-import { Avatar, Grid, Paper } from "@mui/material";
+import { Avatar, Grid, Paper, Button } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
 export function MentorsAndAdvisors({ name, image, designation }) {
@@ -23,8 +23,8 @@ export function MentorsAndAdvisors({ name, image, designation }) {
                         <Avatar src={image} alt={name} />
                         <h3>{name}</h3>
                         <p>{designation}</p>
+                        <Button variant="contained" color="primary" target="_blank">Message him now </Button>
                     </Item>
-
                 </Grid>
             </Grid>
         </div>
