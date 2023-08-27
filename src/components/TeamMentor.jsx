@@ -15,7 +15,7 @@ export function TeamMentor({ name, image, university }) {
       }}
     >
       <CardContent>
-        <Avatar src={image} alt={name} />
+        <Avatar src={image} alt={name} size="lg" />
         <Typography variant='subtitle1'>{name}</Typography>
         <Typography variant='body'>{universityName}</Typography>
       </CardContent>
