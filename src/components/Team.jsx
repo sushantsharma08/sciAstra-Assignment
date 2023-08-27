@@ -5,7 +5,7 @@ import { TeamMentor } from './TeamMentor';
 import { MentorsAndAdvisors } from './MentorsAndAdvisors';
 import { styled } from '@mui/material/styles';
 
-function Team() {
+export function Team() {
   const mentorsData = getMentors();
   const universities = getUniversities();
   const mentorsAndAdvisors = getMentorsAndAdvisors();
@@ -119,5 +119,3 @@ function Team() {
     </div >
   );
 }
-
-export default Team;

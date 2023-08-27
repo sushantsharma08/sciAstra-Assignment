@@ -1,7 +1,8 @@
 import { NavigationMenu } from './components/NavigationMenu';
+import { Footer } from './components/Footer';
 import { Error } from './components/Error';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Team from './components/Team';
+import { Team } from './components/Team';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   )
 }
