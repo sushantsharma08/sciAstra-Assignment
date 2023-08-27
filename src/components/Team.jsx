@@ -21,9 +21,9 @@ function Team() {
 
   return (
     <div>
-      <Typography variant='h2' align='center' my={4}>Our Team</Typography>
+      <Typography variant='h2' align='center' my={4} color="#8f2ec6" fontFamily="Poppins" fontSize="50px">Our Team</Typography>
 
-      <Typography variant='h4' align='center' my={4}>
+      <Typography variant='h4' align='center' my={4} fontFamily="Poppins" color="#7611b0">
         Learn from scientists, research scholars from the top institutes in the world.
       </Typography>
 
@@ -46,6 +46,7 @@ function Team() {
               alignItems: 'center',
               padding: '1rem',
               margin: '1rem',
+              raised: true
             }}
           >
             <CardContent>
@@ -72,7 +73,7 @@ function Team() {
 
       <Divider sx={{ mt: '5', mb: '5' }} />
 
-      <Typography variant='h3' align='center' my={4}>Meet your mentors</Typography>
+      <Typography variant='h3' align='center' my={4} fontFamily="Poppins" color="#7611b0">Meet your mentors</Typography>
 
       <Box
         container
@@ -95,7 +96,7 @@ function Team() {
 
       <Divider sx={{ mt: '5', mb: '5' }} />
 
-      <Typography variant='h3' align='center' my={4}>Mentors And Advisors</Typography>
+      <Typography variant='h3' align='center' my={4} fontFamily="Poppins" color="#7611b0">Mentors And Advisors </Typography>
 
       <Box
         container
