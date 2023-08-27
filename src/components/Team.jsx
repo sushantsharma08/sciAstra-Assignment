@@ -1,5 +1,5 @@
 
-import { Box, Divider, Grid, Paper, Typography } from '@mui/material';
+import { Box, Card, CardContent, Divider, Paper, Typography } from '@mui/material';
 import { getMentors, getMentorsAndAdvisors, getUniversities } from '../api';
 import { TeamMentor } from './TeamMentor';
 import { MentorsAndAdvisors } from './MentorsAndAdvisors';
@@ -21,75 +21,101 @@ function Team() {
 
   return (
     <div>
-      <h1>Our Team</h1>
+      <Typography variant='h2' align='center' my={4}>Our Team</Typography>
 
-      <Typography sx={{
-        fontSize: '1.5rem',
-        fontWeight: 'bold',
-        m: '2rem',
+      <Typography variant='h4' align='center' my={4}>
+        Learn from scientists, research scholars from the top institutes in the world.
+      </Typography>
 
-      }}>Learn from scientists, research scholars from the top institutes in the world. </Typography>
-
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container >
-          {universities.map(university => (
-            <Grid container item key={university.name} xs={4} sx={{
+      <Box
+        container
+        sx={{
+          display: 'flex',
+          alignItems: 'stretch',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
+        {universities.map(university => (
+          <Card
+            key={university.name}
+            sx={{
               display: 'flex',
-              alignItems: 'center',
+              width: '300px',
               justifyContent: 'center',
+              alignItems: 'center',
               padding: '1rem',
-              textAlign: 'center',
-            }}>
-              <Item>{university.name}</Item>
-            </Grid>
-          ))}
-        </Grid>
+              margin: '1rem',
+            }}
+          >
+            <CardContent>
+              <Typography>{university.name}</Typography>
+            </CardContent>
+          </Card>
+        ))}
+
+        <Card
+          sx={{
+            boxShadow: 'none',
+            display: 'flex',
+            width: '300px',
+            justifyContent: 'center',
+            alignItems: 'center',
+            margin: '1rem',
+          }}
+        >
+          <CardContent>
+            <Typography>{" ... and so on."}</Typography>
+          </CardContent>
+        </Card>
       </Box>
-      <>
-        <Divider sx={{ mt: '5', mb: '5' }} />
-      </>
 
-      <Typography sx={{
-        fontSize: '1.5rem',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        m: '2rem',
+      <Divider sx={{ mt: '5', mb: '5' }} />
 
-      }}>Meet your mentors</Typography>
+      <Typography variant='h3' align='center' my={4}>Meet your mentors</Typography>
 
-      <div className="team-members">
-        {
-          mentorsData.map(member => (
-            <TeamMentor
-              key={member.id}
-              name={member.firstName + ' ' + member.lastName}
-              image={member.image}
-              university={member.university}
-            />
-          ))}
-      </div>
+      <Box
+        container
+        sx={{
+          display: 'flex',
+          alignItems: 'stretch',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
+        {mentorsData.map(member => (
+          <TeamMentor
+            key={member.id}
+            name={member.firstName + ' ' + member.lastName}
+            image={member.image}
+            university={member.university}
+          />
+        ))}
+      </Box>
 
-      <Typography sx={{
-        fontSize: '1.5rem',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        m: '2rem',
+      <Divider sx={{ mt: '5', mb: '5' }} />
 
-      }}>Mentors And Advisors </Typography>
+      <Typography variant='h3' align='center' my={4}>Mentors And Advisors</Typography>
 
-      <div className="team-members">
-        {
-          mentorsAndAdvisors.map(advisor => (
-            <MentorsAndAdvisors
-              key={advisor.id}
-              name={advisor.firstName + ' ' + advisor.lastName}
-              image={advisor.image}
-              designation={advisor.designation}
-            />
-          ))}
-      </div>
-
-    </div>
+      <Box
+        container
+        sx={{
+          display: 'flex',
+          alignItems: 'stretch',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+        }}
+      >
+        {mentorsAndAdvisors.map(advisor => (
+          <MentorsAndAdvisors
+            key={advisor.id}
+            name={advisor.firstName + ' ' + advisor.lastName}
+            image={advisor.image}
+            designation={advisor.designation}
+          />
+        ))}
+      </Box>
+    </div >
   );
 }
 

@@ -46,7 +46,7 @@ const mentorsData = [
   },
   {
     id: "c576158a-af84-47f6-9cf3-edb25a4cea69",
-    firstName: "Bob",
+    firstName: "Jane",
     lastName: "McNaught",
     image: "https://picsum.photos/200",
     university: {
@@ -56,8 +56,8 @@ const mentorsData = [
     },
   },
   {
-    id: "c576158a-af84-47f6-9cf3-edb25a4cha69",
-    firstName: "Alice",
+    id: "c576158a-af84-47f6-9cf3-eHb25a4cha69",
+    firstName: "Nico",
     lastName: "McNaught",
     image: "https://picsum.photos/200",
     university: {
@@ -65,7 +65,40 @@ const mentorsData = [
       city: "Stanford",
       country: "USA"
     },
-  }
+  },
+  {
+    id: "c576158a-af84-47f6-9cf3-edb2Ha4cda69",
+    firstName: "Sarah",
+    lastName: "McNaught",
+    image: "https://picsum.photos/200",
+    university: {
+      name: "University of Toronto",
+      city: "Toronto",
+      country: "CANADA"
+    },
+  },
+  {
+    id: "c576158a-af84-47f6-9cf3-edb25H4cda69",
+    firstName: "Sam",
+    lastName: "McNaught",
+    image: "https://picsum.photos/200",
+    university: {
+      name: "University of Waterloo",
+      city: "Waterloo",
+      country: "CANADA"
+    },
+  },
+  {
+    id: "c576158a-af84-47f6-9cf3-edb25a4cda69",
+    firstName: "John",
+    lastName: "Pearson",
+    image: "https://picsum.photos/200",
+    university: {
+      name: "University of British Columbia",
+      city: "Vancouver",
+      country: "CANADA"
+    },
+  },
 ];
 
 const mentosAndAdvisors = [
@@ -73,14 +106,14 @@ const mentosAndAdvisors = [
     id: "9d5efa35-e84e-4c7b-8e92-f849af904f65",
     firstName: "John",
     lastName: "Doe",
-    designation: "Mentor",
+    designation: "Founder SciAstra, Mentor, Qualified NEST, JEE advanced, Mains, Master's Student at NISER",
     image: "https://picsum.photos/200",
   },
   {
     id: "68face75-7fba-4024-a714-fb7dbed86244",
     firstName: "Jane",
     lastName: "Doe",
-    designation: "Mentor",
+    designation: "Cofounder SciAstra, Mentor, Qualified NEST, JEE advanced, Master's Student at NISER",
     image: "https://picsum.photos/200",
   },
 ];
